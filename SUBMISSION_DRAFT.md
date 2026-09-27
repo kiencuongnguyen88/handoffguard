@@ -29,7 +29,7 @@ In Task 03, a separate Bob review task independently checked the handoff lineage
 ## Public links
 
 - Repository: https://github.com/kiencuongnguyen88/handoffguard
-- Live demo: pending GitHub Pages activation
+- Live demo: https://kiencuongnguyen88.github.io/handoffguard/
 
 ## Categories
 

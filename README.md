@@ -27,6 +27,10 @@ Restarting everything wastes accepted work. Trusting everything risks stale exec
 
 HandoffGuard selects the middle path: **preserve accepted state, re-verify mutable facts.**
 
+## Live demo
+
+https://kiencuongnguyen88.github.io/handoffguard/
+
 ## 90-second local demo
 
 Requires Python 3; Git is optional.

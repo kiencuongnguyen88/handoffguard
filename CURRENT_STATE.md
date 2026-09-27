@@ -26,12 +26,17 @@ Bob_evidence_chain:
 public_repo: true
 public_repo_url: https://github.com/kiencuongnguyen88/handoffguard
 publish: true
-github_pages: false
+github_pages: true
+live_demo_url: https://kiencuongnguyen88.github.io/handoffguard/
+pages_deployment:
+  workflow_run_id: 36314778091
+  deployed_commit: 3e82d2dc9ebf0013519c61222a95d353c088f2e2
+  conclusion: success
 LabLab_submission: false
 source_apply: false
 DB_write: false
 RLDB_writeback: false
-next_valid_move: ENABLE_GITHUB_PAGES_FROM_MAIN_DOCS_THEN_VERIFY_PUBLIC_DEMO_URL
+next_valid_move: PRODUCE_DEMO_VIDEO_THEN_COMPLETE_LABLAB_MEDIA_AND_FINAL_SUBMISSION
 ```
 
 Task 02's Bob Todo UI remained visually at `10/11` after the executable receipts and final report were complete. Task 03 independently reviewed the current bytes and classified this as a UI bookkeeping discrepancy, not an evidence failure.
