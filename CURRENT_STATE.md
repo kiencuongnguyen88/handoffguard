@@ -10,7 +10,6 @@ unit_tests: PASS_14
 selective_continuation_demo: PASS
 product_self_adjudication: PASS_CONTINUATION
 privacy_scan: PASS
-static_demo: PASS_HTTP_200
 real_Bob_execution: true
 Bob_tasks:
   task_01_plan: PASS
@@ -28,15 +27,28 @@ public_repo_url: https://github.com/kiencuongnguyen88/handoffguard
 publish: true
 github_pages: true
 live_demo_url: https://kiencuongnguyen88.github.io/handoffguard/
-pages_deployment:
-  workflow_run_id: 36314778091
-  deployed_commit: 3e82d2dc9ebf0013519c61222a95d353c088f2e2
-  conclusion: success
+public_page:
+  baseline: FULL_VERIFIED_EVIDENCE_EXPLORER
+  source_file: docs/index.html
+  evidence_pin: 00f6778fca34dca5d8e6bcafa209ea4dde6adb53
+  source_commit: a8e19242585da78bd9e6a047515d9e7942a5f5b2
+  pages_workflow_run_id: 36318548687
+  pages_artifact_id: 10931497680
+  pages_artifact_SHA256: 090c5692a1d96f187615cca93ec95ec2ea0180831defbd18790d4b12354cef71
+  pages_build: PASS
+  pages_deploy: PASS
+  static_JS_syntax: PASS
+  referenced_DOM_ids: PASS
+  fail_closed_evidence_gate: IMPLEMENTED
+  presentation_mode: IMPLEMENTED
+  raw_evidence_inspector: IMPLEMENTED
+  Bob_session_viewer: IMPLEMENTED
+  human_browser_visual_readback: PENDING
 LabLab_submission: false
 source_apply: false
 DB_write: false
 RLDB_writeback: false
-next_valid_move: PRODUCE_DEMO_VIDEO_THEN_COMPLETE_LABLAB_MEDIA_AND_FINAL_SUBMISSION
+next_valid_move: HUMAN_BROWSER_READBACK_OF_FULL_EVIDENCE_EXPLORER_THEN_VIDEO_FACTORY_CAPTURE
 ```
 
 Task 02's Bob Todo UI remained visually at `10/11` after the executable receipts and final report were complete. Task 03 independently reviewed the current bytes and classified this as a UI bookkeeping discrepancy, not an evidence failure.
