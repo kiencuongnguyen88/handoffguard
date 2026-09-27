@@ -1,0 +1,46 @@
+{
+  "acceptance_command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "acceptance_command_sha256": "2d04b977995997bf581997c1324f7b879e1d8a8a74c11eb056d50e2da6510016",
+  "acceptance_receipt_sha256": "7b11b17fc4016688eec2fca6b4eb938859517476618350c3c07d4ce667712d11",
+  "contract_sha256": "486e36f9f605ce3cba210ecadb6b4350fbeebde96a802a7128eb0acdba472ec4",
+  "exit_code": 0,
+  "finished_at": "2026-09-27T02:55:16.697620Z",
+  "handoff_sha256": "2bd7cf674c74cf07852c22f235e904df527eb86acee187d6fa6a19c9a0a96e44",
+  "material_hashes_after": {
+    "ARCHITECTURE.md": "a11487f57eed05392a043a098b0bec56cc1226d59ad448fa4b392588a81f194f",
+    "FULL_BASELINE_SCOPE_R003.md": "7a8d72c82e3cd8ab985d4a9ddb0dbb541ed6b34d0883b187098f4e483a002f11",
+    "PROOF_CONTRACT.md": "ebd249cbac09cca53789e89adef6724712a7a77ed4cc7d2234b58133ad860a99",
+    "contracts/demo.json": "dce74bf1f0a6f8bd98a2ef21ae642b21172885ade3ef80d416edfc899ae3e2e4",
+    "demo.py": "6c3f95c32ba2eb283556ca82fbb730ccb4f5797393dd5935aa6b8067a0d9843d",
+    "handoffguard.py": "49488c32c0d3615d582d1ab35081fb7719664b274959c80d309c873237c25a26",
+    "tests/test_calc.py": "a55fcaec2a7262237be9ff7cd3b5c9b5ea542606511dc17bed0e9c19ef193fdc",
+    "tests/test_handoffguard.py": "37e833461536229d73546238aaeec9e79a546dc558584800b577b6af4a8c1aa4"
+  },
+  "material_hashes_before": {
+    "ARCHITECTURE.md": "a11487f57eed05392a043a098b0bec56cc1226d59ad448fa4b392588a81f194f",
+    "FULL_BASELINE_SCOPE_R003.md": "7a8d72c82e3cd8ab985d4a9ddb0dbb541ed6b34d0883b187098f4e483a002f11",
+    "PROOF_CONTRACT.md": "ebd249cbac09cca53789e89adef6724712a7a77ed4cc7d2234b58133ad860a99",
+    "contracts/demo.json": "dce74bf1f0a6f8bd98a2ef21ae642b21172885ade3ef80d416edfc899ae3e2e4",
+    "demo.py": "6c3f95c32ba2eb283556ca82fbb730ccb4f5797393dd5935aa6b8067a0d9843d",
+    "handoffguard.py": "49488c32c0d3615d582d1ab35081fb7719664b274959c80d309c873237c25a26",
+    "tests/test_calc.py": "a55fcaec2a7262237be9ff7cd3b5c9b5ea542606511dc17bed0e9c19ef193fdc",
+    "tests/test_handoffguard.py": "37e833461536229d73546238aaeec9e79a546dc558584800b577b6af4a8c1aa4"
+  },
+  "missing_material_paths": [],
+  "mutated_during_acceptance": false,
+  "schema": "handoffguard.acceptance-receipt.v1",
+  "started_at": "2026-09-27T02:55:08.259092Z",
+  "status": "PASS_EXECUTABLE_PROOF",
+  "stderr": "test_add (test_calc.CalcTests.test_add) ... ok\ntest_acceptance_cannot_run_without_pass_resume (test_handoffguard.HandoffGuardTests.test_acceptance_cannot_run_without_pass_resume) ... ok\ntest_contract_change_blocks_old_handoff (test_handoffguard.HandoffGuardTests.test_contract_change_blocks_old_handoff) ... ok\ntest_failed_acceptance_stays_failed (test_handoffguard.HandoffGuardTests.test_failed_acceptance_stays_failed) ... ok\ntest_fresh_handoff_passes (test_handoffguard.HandoffGuardTests.test_fresh_handoff_passes) ... ok\ntest_material_change_blocks_resume (test_handoffguard.HandoffGuardTests.test_material_change_blocks_resume) ... ok\ntest_missing_material_path_blocks_resume (test_handoffguard.HandoffGuardTests.test_missing_material_path_blocks_resume) ... ok\ntest_post_acceptance_edit_blocks_stale_final_claim (test_handoffguard.HandoffGuardTests.test_post_acceptance_edit_blocks_stale_final_claim) ... ok\ntest_rebind_preserves_accepted_state_and_lineage (test_handoffguard.HandoffGuardTests.test_rebind_preserves_accepted_state_and_lineage) ... ok\ntest_rebind_requires_stale_verification (test_handoffguard.HandoffGuardTests.test_rebind_requires_stale_verification) ... ok\ntest_success_claim_flagged_when_proof_not_accepted (test_handoffguard.HandoffGuardTests.test_success_claim_flagged_when_proof_not_accepted) ... ok\ntest_successful_continuation_passes (test_handoffguard.HandoffGuardTests.test_successful_continuation_passes) ... ok\ntest_tampered_handoff_is_inconclusive (test_handoffguard.HandoffGuardTests.test_tampered_handoff_is_inconclusive) ... ok\ntest_unrelated_file_change_does_not_restart_accepted_work (test_handoffguard.HandoffGuardTests.test_unrelated_file_change_does_not_restart_accepted_work) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 6.829s\n\nOK\n",
+  "stdout": "",
+  "verification_sha256": "bc467e5600ef08c5a989e0e1c8ccb7485583b1ca336667974d45331fa3379f61",
+  "workflow_id": "handoffguard-product-v1"
+}

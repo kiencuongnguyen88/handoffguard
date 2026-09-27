@@ -1,0 +1,50 @@
+{
+  "acceptance_command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "acceptance_command_sha256": "2d04b977995997bf581997c1324f7b879e1d8a8a74c11eb056d50e2da6510016",
+  "accepted_decisions": [
+    "add(a, b) must perform arithmetic addition.",
+    "tests/test_calc.py remains an unchanged acceptance condition.",
+    "A new Bob session must verify mutable source before continuing the prior handoff."
+  ],
+  "accepted_scope": "Repair the bounded calculator regression without reopening the accepted addition behavior or weakening its test.",
+  "authority_boundary": [
+    "Do not weaken or delete the acceptance test.",
+    "Do not broaden beyond this synthetic workbench.",
+    "Do not claim PASS without executable acceptance evidence."
+  ],
+  "contract_sha256": "45a8173a9c8e9388ff7b4130622129a54a8c40bb2c9ff72493e27e552bb22850",
+  "created_at": "2026-09-27T05:49:49.923880Z",
+  "git_state": {
+    "available": false,
+    "dirty": null,
+    "head": null
+  },
+  "handoff_id": "HG-84362129A612",
+  "handoff_sha256": "aef394243c71639e092d697a22f09c6e10bc97fa82eee209979ba7c6516e84d3",
+  "material_hashes": {
+    "src/calc.py": "f369a76733aaa5ba2121d65ca218ac0e862ce604f69522151e45e13d1f71f5cb",
+    "tests/test_calc.py": "f7251404c142c10d99a6d1778bfbeec5d58380857af5450981fe458b4107a011"
+  },
+  "material_paths": [
+    "src/calc.py",
+    "tests/test_calc.py"
+  ],
+  "next_move": "Repair only the current arithmetic regression, then rerun unchanged acceptance.",
+  "parent_handoff_sha256": "655ab893f280728aec5b9a32a89d80751317088e09cad3027d18e61ba2b2127b",
+  "replan": {
+    "ref": "bob_replan.md",
+    "sha256": "d23ab9477dcde25ec379083115ccaf3c034c903820b72e27c0191f0751638c13"
+  },
+  "root_label": "bob-workbench",
+  "schema": "handoffguard.handoff.v1",
+  "transition_nonce": "47462cde901fb29c397f40ca",
+  "workflow_id": "handoffguard-bob-workbench-v1"
+}

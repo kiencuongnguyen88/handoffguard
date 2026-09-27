@@ -1,0 +1,14 @@
+{
+  "acceptance_receipt_sha256": "48dda86c01b9cd64458bce303dd9c8cef9907b1f96a6214d0ea786854308bd4f",
+  "accepted": true,
+  "adjudication_sha256": "112b5971338bfe84319b5090c5434904486d7c6e15ead058490d47d9177131d7",
+  "checked_at": "2026-09-27T05:55:29.229665Z",
+  "claim_status": "PASS",
+  "handoff_sha256": "aef394243c71639e092d697a22f09c6e10bc97fa82eee209979ba7c6516e84d3",
+  "reason": "A verified handoff start, executable acceptance, and current final source bytes all bind consistently.",
+  "schema": "handoffguard.adjudication.v1",
+  "status": "PASS_CONTINUATION",
+  "unsupported_success_claim": false,
+  "verification_sha256": "9c3dfefe20554af0809639408fc40a76be80b77e10a57c4f1f17e4c7dac68e2c",
+  "workflow_id": "handoffguard-bob-workbench-v1"
+}

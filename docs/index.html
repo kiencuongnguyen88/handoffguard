@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HandoffGuard</title><style>body{font-family:system-ui,sans-serif;max-width:920px;margin:40px auto;padding:0 20px;line-height:1.55;color:#171717}code,pre{background:#f4f4f4;padding:2px 5px;border-radius:5px}pre{padding:16px;overflow:auto}.card{border:1px solid #ddd;border-radius:12px;padding:18px;margin:16px 0}h1{font-size:2.4rem}h2{margin-top:2rem}.ok{font-weight:700}.bad{font-weight:700}</style></head><body>
+<h1>HandoffGuard</h1><p><strong>Resume AI coding work only from a verified repository state.</strong></p>
+<div class="card"><h2>The failure</h2><p>Agent A leaves a useful checkpoint. Material source changes before Agent B resumes. Restarting everything wastes accepted work; blindly trusting sender-time facts risks stale execution.</p></div>
+<div class="card"><h2>The rule</h2><pre>accepted decisions survive the handoff
++
+material source facts are verified before resume</pre></div>
+<div class="card"><h2>Deterministic demo</h2><pre>PASS_RESUME_BINDING
+→ PASS_RESUME_BINDING  (unrelated repo change)
+→ BLOCKED_STALE_HANDOFF
+→ PASS_RESUME_BINDING  (fresh-read / re-plan / rebind)
+→ FAIL_EXECUTABLE_PROOF
+→ PASS_EXECUTABLE_PROOF
+→ PASS_CONTINUATION</pre></div>
+<div class="card"><h2>IBM Bob role</h2><p>Bob Plan understands the handoff and repo, Bob Agent performs targeted fresh-read/re-plan and the real code repair, and Bob review checks the final diff and evidence. Executable receipts—not AI prose—decide PASS.</p></div>
+</body></html>

@@ -1,0 +1,61 @@
+{
+  "acceptance_command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "acceptance_command_sha256": "2d04b977995997bf581997c1324f7b879e1d8a8a74c11eb056d50e2da6510016",
+  "accepted_decisions": [
+    "Selective continuation is required: unrelated repository change may pass while material drift blocks.",
+    "Accepted state must survive rebind while mutable facts are refreshed.",
+    "Executable acceptance and final-current-byte adjudication are required before PASS_CONTINUATION.",
+    "Reduced variants remain challengers until BBR proves material net advantage and no material regression."
+  ],
+  "accepted_scope": "Verify the full HandoffGuard hackathon baseline package without silently reducing its capability.",
+  "authority_boundary": [
+    "No public publish from this local verification.",
+    "No credentials or private data.",
+    "No automatic LabLab submission.",
+    "No replacement of the full baseline by a reduced variant without proof."
+  ],
+  "contract_sha256": "486e36f9f605ce3cba210ecadb6b4350fbeebde96a802a7128eb0acdba472ec4",
+  "created_at": "2026-09-27T02:55:05.176506Z",
+  "git_state": {
+    "available": false,
+    "dirty": null,
+    "head": null
+  },
+  "handoff_id": "HG-509660A8374E",
+  "handoff_sha256": "2bd7cf674c74cf07852c22f235e904df527eb86acee187d6fa6a19c9a0a96e44",
+  "material_hashes": {
+    "ARCHITECTURE.md": "a11487f57eed05392a043a098b0bec56cc1226d59ad448fa4b392588a81f194f",
+    "FULL_BASELINE_SCOPE_R003.md": "7a8d72c82e3cd8ab985d4a9ddb0dbb541ed6b34d0883b187098f4e483a002f11",
+    "PROOF_CONTRACT.md": "ebd249cbac09cca53789e89adef6724712a7a77ed4cc7d2234b58133ad860a99",
+    "contracts/demo.json": "dce74bf1f0a6f8bd98a2ef21ae642b21172885ade3ef80d416edfc899ae3e2e4",
+    "demo.py": "6c3f95c32ba2eb283556ca82fbb730ccb4f5797393dd5935aa6b8067a0d9843d",
+    "handoffguard.py": "49488c32c0d3615d582d1ab35081fb7719664b274959c80d309c873237c25a26",
+    "tests/test_calc.py": "a55fcaec2a7262237be9ff7cd3b5c9b5ea542606511dc17bed0e9c19ef193fdc",
+    "tests/test_handoffguard.py": "37e833461536229d73546238aaeec9e79a546dc558584800b577b6af4a8c1aa4"
+  },
+  "material_paths": [
+    "handoffguard.py",
+    "demo.py",
+    "tests/test_handoffguard.py",
+    "tests/test_calc.py",
+    "contracts/demo.json",
+    "FULL_BASELINE_SCOPE_R003.md",
+    "ARCHITECTURE.md",
+    "PROOF_CONTRACT.md"
+  ],
+  "next_move": "Run the complete HandoffGuard test and deterministic demo suite.",
+  "parent_handoff_sha256": null,
+  "replan": null,
+  "root_label": "handoffguard-full-baseline",
+  "schema": "handoffguard.handoff.v1",
+  "transition_nonce": "427bdd945cf94ddfc788221e",
+  "workflow_id": "handoffguard-product-v1"
+}

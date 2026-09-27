@@ -1,0 +1,24 @@
+{
+  "accepted": true,
+  "changed_material_paths": [],
+  "contract_sha256": "45a8173a9c8e9388ff7b4130622129a54a8c40bb2c9ff72493e27e552bb22850",
+  "exact_next_move": "Repair only the current arithmetic regression, then rerun unchanged acceptance.",
+  "git_head_at_handoff": null,
+  "git_head_now": null,
+  "handoff_sha256": "aef394243c71639e092d697a22f09c6e10bc97fa82eee209979ba7c6516e84d3",
+  "missing_material_paths": [],
+  "preserved_accepted_decisions": [
+    "add(a, b) must perform arithmetic addition.",
+    "tests/test_calc.py remains an unchanged acceptance condition.",
+    "A new Bob session must verify mutable source before continuing the prior handoff."
+  ],
+  "preserved_accepted_scope": "Repair the bounded calculator regression without reopening the accepted addition behavior or weakening its test.",
+  "reason": "Accepted continuation state is preserved and all declared material source bytes still match the handoff.",
+  "replan_required": false,
+  "repo_head_changed": false,
+  "schema": "handoffguard.resume-verification.v1",
+  "status": "PASS_RESUME_BINDING",
+  "verification_sha256": "9c3dfefe20554af0809639408fc40a76be80b77e10a57c4f1f17e4c7dac68e2c",
+  "verified_at": "2026-09-27T05:53:39.876118Z",
+  "workflow_id": "handoffguard-bob-workbench-v1"
+}

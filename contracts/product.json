@@ -1,0 +1,38 @@
+{
+  "workflow_id": "handoffguard-product-v1",
+  "root": "..",
+  "root_label": "handoffguard-full-baseline",
+  "accepted_scope": "Verify the full HandoffGuard hackathon baseline package without silently reducing its capability.",
+  "accepted_decisions": [
+    "Selective continuation is required: unrelated repository change may pass while material drift blocks.",
+    "Accepted state must survive rebind while mutable facts are refreshed.",
+    "Executable acceptance and final-current-byte adjudication are required before PASS_CONTINUATION.",
+    "Reduced variants remain challengers until BBR proves material net advantage and no material regression."
+  ],
+  "next_move": "Run the complete HandoffGuard test and deterministic demo suite.",
+  "authority_boundary": [
+    "No public publish from this local verification.",
+    "No credentials or private data.",
+    "No automatic LabLab submission.",
+    "No replacement of the full baseline by a reduced variant without proof."
+  ],
+  "material_paths": [
+    "handoffguard.py",
+    "demo.py",
+    "tests/test_handoffguard.py",
+    "tests/test_calc.py",
+    "contracts/demo.json",
+    "FULL_BASELINE_SCOPE_R003.md",
+    "ARCHITECTURE.md",
+    "PROOF_CONTRACT.md"
+  ],
+  "acceptance_command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ]
+}

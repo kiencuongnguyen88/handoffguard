@@ -1,0 +1,19 @@
+test_add (test_calc.CalcTests.test_add) ... ok
+test_acceptance_cannot_run_without_pass_resume (test_handoffguard.HandoffGuardTests.test_acceptance_cannot_run_without_pass_resume) ... ok
+test_contract_change_blocks_old_handoff (test_handoffguard.HandoffGuardTests.test_contract_change_blocks_old_handoff) ... ok
+test_failed_acceptance_stays_failed (test_handoffguard.HandoffGuardTests.test_failed_acceptance_stays_failed) ... ok
+test_fresh_handoff_passes (test_handoffguard.HandoffGuardTests.test_fresh_handoff_passes) ... ok
+test_material_change_blocks_resume (test_handoffguard.HandoffGuardTests.test_material_change_blocks_resume) ... ok
+test_missing_material_path_blocks_resume (test_handoffguard.HandoffGuardTests.test_missing_material_path_blocks_resume) ... ok
+test_post_acceptance_edit_blocks_stale_final_claim (test_handoffguard.HandoffGuardTests.test_post_acceptance_edit_blocks_stale_final_claim) ... ok
+test_rebind_preserves_accepted_state_and_lineage (test_handoffguard.HandoffGuardTests.test_rebind_preserves_accepted_state_and_lineage) ... ok
+test_rebind_requires_stale_verification (test_handoffguard.HandoffGuardTests.test_rebind_requires_stale_verification) ... ok
+test_success_claim_flagged_when_proof_not_accepted (test_handoffguard.HandoffGuardTests.test_success_claim_flagged_when_proof_not_accepted) ... ok
+test_successful_continuation_passes (test_handoffguard.HandoffGuardTests.test_successful_continuation_passes) ... ok
+test_tampered_handoff_is_inconclusive (test_handoffguard.HandoffGuardTests.test_tampered_handoff_is_inconclusive) ... ok
+test_unrelated_file_change_does_not_restart_accepted_work (test_handoffguard.HandoffGuardTests.test_unrelated_file_change_does_not_restart_accepted_work) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 6.436s
+
+OK

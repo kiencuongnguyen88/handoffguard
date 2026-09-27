@@ -1,0 +1,30 @@
+{
+  "workflow_id": "handoffguard-bob-workbench-v1",
+  "root": ".",
+  "root_label": "bob-workbench",
+  "accepted_scope": "Repair the bounded calculator regression without reopening the accepted addition behavior or weakening its test.",
+  "accepted_decisions": [
+    "add(a, b) must perform arithmetic addition.",
+    "tests/test_calc.py remains an unchanged acceptance condition.",
+    "A new Bob session must verify mutable source before continuing the prior handoff."
+  ],
+  "next_move": "Continue the bounded calculator repair from a verified current source state.",
+  "authority_boundary": [
+    "Do not weaken or delete the acceptance test.",
+    "Do not broaden beyond this synthetic workbench.",
+    "Do not claim PASS without executable acceptance evidence."
+  ],
+  "material_paths": [
+    "src/calc.py",
+    "tests/test_calc.py"
+  ],
+  "acceptance_command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ]
+}

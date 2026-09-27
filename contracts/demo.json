@@ -1,0 +1,31 @@
+{
+  "workflow_id": "handoffguard-demo-v1",
+  "root": "..",
+  "root_label": "handoffguard-demo",
+  "accepted_scope": "Continue the bounded calculator maintenance task without reopening already accepted decisions.",
+  "accepted_decisions": [
+    "The public add(a, b) behavior remains part of the accepted interface.",
+    "The existing test remains an acceptance condition and must not be weakened to make execution appear green.",
+    "A successor agent may preserve accepted state but must fresh-verify mutable material source before resume."
+  ],
+  "next_move": "Continue the exact bounded maintenance task from the verified repository state.",
+  "authority_boundary": [
+    "No public publish from the tool.",
+    "No credential or private-data access.",
+    "No silent widening of accepted scope.",
+    "PASS requires executable evidence, not agent prose."
+  ],
+  "material_paths": [
+    "src/calc.py",
+    "tests/test_calc.py"
+  ],
+  "acceptance_command": [
+    "python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ]
+}

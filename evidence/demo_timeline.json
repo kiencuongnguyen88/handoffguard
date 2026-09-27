@@ -1,0 +1,23 @@
+{
+  "expected_sequence": [
+    "PASS_RESUME_BINDING",
+    "PASS_RESUME_BINDING",
+    "BLOCKED_STALE_HANDOFF",
+    "PASS_RESUME_BINDING",
+    "FAIL_EXECUTABLE_PROOF",
+    "PASS_EXECUTABLE_PROOF",
+    "PASS_CONTINUATION"
+  ],
+  "observed_sequence": [
+    "PASS_RESUME_BINDING",
+    "PASS_RESUME_BINDING",
+    "BLOCKED_STALE_HANDOFF",
+    "PASS_RESUME_BINDING",
+    "FAIL_EXECUTABLE_PROOF",
+    "PASS_EXECUTABLE_PROOF",
+    "PASS_CONTINUATION"
+  ],
+  "sequence_match": true,
+  "selective_continuation_proven": true,
+  "final_status": "PASS_CONTINUATION"
+}

@@ -1,0 +1,25 @@
+{
+  "accepted": true,
+  "changed_material_paths": [],
+  "contract_sha256": "486e36f9f605ce3cba210ecadb6b4350fbeebde96a802a7128eb0acdba472ec4",
+  "exact_next_move": "Run the complete HandoffGuard test and deterministic demo suite.",
+  "git_head_at_handoff": null,
+  "git_head_now": null,
+  "handoff_sha256": "2bd7cf674c74cf07852c22f235e904df527eb86acee187d6fa6a19c9a0a96e44",
+  "missing_material_paths": [],
+  "preserved_accepted_decisions": [
+    "Selective continuation is required: unrelated repository change may pass while material drift blocks.",
+    "Accepted state must survive rebind while mutable facts are refreshed.",
+    "Executable acceptance and final-current-byte adjudication are required before PASS_CONTINUATION.",
+    "Reduced variants remain challengers until BBR proves material net advantage and no material regression."
+  ],
+  "preserved_accepted_scope": "Verify the full HandoffGuard hackathon baseline package without silently reducing its capability.",
+  "reason": "Accepted continuation state is preserved and all declared material source bytes still match the handoff.",
+  "replan_required": false,
+  "repo_head_changed": false,
+  "schema": "handoffguard.resume-verification.v1",
+  "status": "PASS_RESUME_BINDING",
+  "verification_sha256": "bc467e5600ef08c5a989e0e1c8ccb7485583b1ca336667974d45331fa3379f61",
+  "verified_at": "2026-09-27T02:55:06.680139Z",
+  "workflow_id": "handoffguard-product-v1"
+}
