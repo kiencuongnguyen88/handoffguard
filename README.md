@@ -113,15 +113,13 @@ The hackathon build uses `FULL_BASELINE_SCOPE_R003.md` as its root. A reduced va
 
 ## IBM Bob 2.0 role
 
-IBM Bob is intended to perform the material development workflow, not generic research:
+IBM Bob performed the material development workflow, not generic research:
 
-1. **Plan/repository understanding** — understand sender handoff, current source and the continuation boundary.
-2. **Agent execution** — run stale-handoff verification, fresh-read changed source, produce bounded replan/rebind, expose the unchanged failing acceptance, repair the current code and rerun proof.
-3. **Review** — inspect the final diff, lineage and executable evidence; check that README claims stay inside proof.
+1. **Plan/repository understanding** — Bob read the sender handoff and current repository, separated accepted state from mutable facts, identified `src/calc.py` as the material drift, and produced `handoffguard-continuation-plan.md`.
+2. **Agent execution** — Bob verified the stale sender handoff (`BLOCKED_STALE_HANDOFF`), fresh-read the changed material source, wrote a bounded re-plan, created a successor handoff, verified `PASS_RESUME_BINDING`, ran the unchanged acceptance to obtain `FAIL_EXECUTABLE_PROOF`, repaired only `return a - b` to `return a + b`, reran the same acceptance to obtain `PASS_EXECUTABLE_PROOF`, and finished with `PASS_CONTINUATION`.
+3. **Review** — a separate Bob review task checked lineage, unchanged test/contract hashes, current final source bytes, unsupported-success handling, screenshot presence, and public-safety constraints, returning `PASS_REVIEW`.
 
-`bob_workbench/` is already staged in a real stale-handoff + failing-code state. See `BOB_TASKS.md`.
-
-After each material Bob task, save the Bob task-session-summary screenshot into `bob_sessions/`.
+Task-session-summary screenshots for all three material Bob tasks are stored in `bob_sessions/`. Executable receipts are stored in `bob_workbench/evidence/`.
 
 Bob session screenshots prove Bob usage; they do not replace executable evidence.
 
