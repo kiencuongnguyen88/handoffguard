@@ -10,9 +10,11 @@
     "publish": true,
     "real_Bob_execution": true,
     "source_apply": false,
-    "live_demo_url": "https://kiencuongnguyen88.github.io/handoffguard/"
+    "live_demo_url": "https://kiencuongnguyen88.github.io/handoffguard/",
+    "public_page_full_explorer": true,
+    "public_page_client_visual_readback": false
   },
-  "generated_from_public_commit": "0fe1f9cac500002289d52b08277c9a9ee3e6e0d9",
+  "generated_from_public_commit": "ed38a14fa936e3daad77a123724e1f3bb0e575b9",
   "file_count_excluding_manifest_ledgers": 70,
   "files": [
     {
@@ -147,8 +149,8 @@
     },
     {
       "path": "CURRENT_STATE.md",
-      "sha256": "cabb547d64694132843cbfcf66506079dab59e4c2816b13da39a35ea1a5d09db",
-      "size_bytes": 1408
+      "sha256": "83397122d1e7d73b5e0e191f356dbc98eefa14170df66bd43e6834ac0ee1d64f",
+      "size_bytes": 1902
     },
     {
       "path": "DEMO_SCRIPT.md",
@@ -162,8 +164,8 @@
     },
     {
       "path": "docs/index.html",
-      "sha256": "1f0f190b87e2285a8389ae73eb0016a458ef1548e15b4a73c638b84389520617",
-      "size_bytes": 1604
+      "sha256": "7378f4a821213c59a7a91b7962ce9d0200f00052ac1ae2ada9dc44870f23f26e",
+      "size_bytes": 28665
     },
     {
       "path": "evidence/demo_stdout.json",
@@ -307,8 +309,8 @@
     },
     {
       "path": "PUBLICATION_RECEIPT.md",
-      "sha256": "7f71b40ceb8d1b780cab691917fb929fcebab90ccdcd97d5793ee013bd92fdb7",
-      "size_bytes": 566
+      "sha256": "4b526d3435b17d8e8d4589e772e28240802865c27ff89d3b51d33fdd90a01df9",
+      "size_bytes": 1805
     },
     {
       "path": "README.md",
